@@ -4,16 +4,16 @@ public class Main {
     public static double calculate(double num1, double num2, char operator) {
         switch (operator) {
             case '+':
-                return num1 + num2;
+                return n1 + n2;
             case '-':
-                return num1 - num2;
+                return n1 - n2;
             case '*':
-                return num1 * num2;
+                return n1 * n2;
             case '/':
-                if (num2 == 0) {
+                if (n2 == 0) {
                     throw new ArithmeticException("Division by zero");
                 }
-                return num1 / num2;
+                return n1 / n2;
             default:
                 throw new IllegalArgumentException("Invalid operator");
         }
@@ -33,7 +33,7 @@ public class Main {
 
         try {
             double result = calculate(num1, num2, operator);
-            System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
+            System.out.println(n1 + " " + operator + " " + n2 + " = " + result);
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero");
         } catch (IllegalArgumentException e) {
