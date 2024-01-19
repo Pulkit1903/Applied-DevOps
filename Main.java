@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // define the public class
 public class Main {
-    public static double calculate(double num1, double num2, char operator) {
+    public static double calculate(double n1, double n2, char operator) {
         switch (operator) {
             case '+':
                 return n1 + n2;
