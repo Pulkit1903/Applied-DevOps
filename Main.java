@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// define the public class
 public class Main {
     public static double calculate(double num1, double num2, char operator) {
         switch (operator) {
