@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
 public class Main {
-    public static double calculate(double num1, double num2, char operator) {
+    public static double calculate(double n1, double n2, char operator) {
         switch (operator) {
             case '+':
-                return num1 + num2;
+                return n1 + n2;
             case '-':
-                return num1 - num2;
+                return n1 - n2;
             case '*':
-                return num1 * num2;
+                return n1 * n2;
             case '/':
-                if (num2 == 0) {
+                if (n2 == 0) {
                     throw new ArithmeticException("Division by zero");
                 }
-                return num1 / num2;
+                return n1 / n2;
             default:
                 throw new IllegalArgumentException("Invalid operator");
         }
