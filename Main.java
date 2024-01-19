@@ -30,7 +30,7 @@ public class Main {
 
         System.out.print("Enter second number: ");
         double num2 = input.nextDouble();
-
+// Exception Handling feature is added
         try {
             double result = calculate(num1, num2, operator);
             System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
